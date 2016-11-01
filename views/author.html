@@ -1,0 +1,23 @@
+
+	<dl class="author">
+		<dt ng-show="done">本周推荐</dt>
+		<dd ng-repeat="author in recs.authors">
+			<div class="avatar">
+				<img ng-src="{{author.avatar}}" alt="">
+			</div>
+			<div class="info">
+				<h5>{{author.name}}</h5>
+				<p>{{author.editor_notes}}</p>
+			</div>
+		</dd>
+		<dt ng-show="done">热门作者</dt>
+		<dd ng-repeat="author in alls.authors">
+			<div class="avatar">
+				<img src="{{author.avatar}}" alt="">
+			</div>
+			<div class="info">
+				<h5>{{author.name}}</h5>
+				<p>{{author.editor_notes}}</p>
+			</div>
+		</dd>
+	</dl>
